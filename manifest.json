@@ -9,4 +9,13 @@
         "default_popup": "popup.html"
     },
     "permissions": ["activeTab", "tabs"]
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["script.js"],
+          "run_at": "document_end"
+        }
+      ]      
 }
